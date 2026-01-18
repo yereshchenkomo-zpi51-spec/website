@@ -241,6 +241,28 @@ section {
   width: min(420px, 100%);
 }
 
+.form-status {
+  font-size: 14px;
+  padding: 8px 10px;
+  border-radius: 8px;
+  margin: 0;
+  display: none;
+}
+
+.form-status.error {
+  display: block;
+  background: #fee2e2;
+  color: #991b1b;
+  border: 1px solid #fecaca;
+}
+
+.form-status.success {
+  display: block;
+  background: #dcfce7;
+  color: #166534;
+  border: 1px solid #bbf7d0;
+}
+
 .contact-form input,
 .contact-form textarea {
   width: 100%;
