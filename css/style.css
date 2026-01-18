@@ -1,0 +1,290 @@
+:root {
+  --ink: #0f172a;
+  --muted: #475569;
+  --brand: #0f766e;
+  --accent: #f59e0b;
+  --bg: #f8fafc;
+  --card: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Rubik", sans-serif;
+  color: var(--ink);
+  background: linear-gradient(180deg, #ffffff 0%, #f3f6fb 100%);
+}
+
+p {
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+#main {
+  background: var(--bg);
+}
+
+.container {
+  width: min(1120px, 92%);
+  margin: 0 auto;
+}
+
+/* Header */
+.site-header {
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-mark {
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  border-radius: 12px;
+  background: var(--brand);
+  color: #fff;
+  font-weight: 800;
+}
+
+.logo-text span {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.site-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 16px;
+  padding: 0;
+  margin: 0;
+}
+
+.site-nav a {
+  text-decoration: none;
+  color: var(--ink);
+  font-weight: 500;
+}
+
+.site-nav a:hover {
+  color: var(--brand);
+}
+
+.header-contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.header-contacts a {
+  text-decoration: none;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+/* Main */
+main {
+  padding-bottom: 40px;
+}
+
+.hero {
+  padding: 48px 0 24px;
+}
+
+.hero-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+
+.hero h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 40px;
+  margin: 0 0 12px;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 12px;
+  margin: 16px 0 24px;
+}
+
+.btn,
+.btn-outline {
+  display: inline-block;
+  padding: 10px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.btn {
+  background: var(--brand);
+  color: #fff;
+}
+
+.btn-outline {
+  border: 1px solid var(--brand);
+  color: var(--brand);
+}
+
+.hero-stats {
+  display: flex;
+  gap: 16px;
+}
+
+.stat {
+  background: var(--card);
+  padding: 12px 16px;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+}
+
+.stat span {
+  font-weight: 700;
+}
+
+.hero-visual img {
+  width: 360px;
+  max-width: 100%;
+}
+
+/* Sections */
+section {
+  padding: 32px 0;
+}
+
+.section h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 28px;
+  margin-bottom: 16px;
+}
+
+.about-grid {
+  display: flex;
+  gap: 24px;
+}
+
+.about-card {
+  background: var(--card);
+  border: 1px solid #e5e7eb;
+  padding: 16px;
+  border-radius: 12px;
+}
+
+.about-card ul {
+  padding-left: 18px;
+}
+
+.cards {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid #e5e7eb;
+  padding: 16px;
+  border-radius: 12px;
+  flex: 1 1 220px;
+}
+
+.card img {
+  width: 42px;
+  height: 42px;
+}
+
+.team-cards .card {
+  text-align: center;
+}
+
+.contacts {
+  background: #eef2ff;
+}
+
+.contact-inner {
+  display: flex;
+  gap: 24px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact-form {
+  background: #fff;
+  padding: 16px;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: min(420px, 100%);
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #cbd5f5;
+  border-radius: 8px;
+  font-family: inherit;
+}
+
+/* Footer */
+.site-footer {
+  background: #0f172a;
+  color: #e2e8f0;
+  padding: 24px 0;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.site-footer p {
+  color: #cbd5f5;
+  margin: 4px 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .header-inner,
+  .hero-inner,
+  .about-grid,
+  .contact-inner,
+  .footer-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .site-nav ul {
+    flex-wrap: wrap;
+  }
+
+  .hero h1 {
+    font-size: 30px;
+  }
+}
