@@ -1,21 +1,15 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kaizenway × Veldar — Радари для України</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Rubik:wght@300;400;600;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kaizenway UA — аналітика транспорту</title>
+  <link rel="stylesheet" href="css/style.css" />
   <style>
-    /* Внутрішні стилі (приклад) */
-    .note {
-      border-left: 4px solid #f59e0b;
-      background: #fff7ed;
-      padding: 12px 16px;
-      margin-top: 12px;
-      font-weight: 500;
+    /* Internal styles demo */
+    .inline-note {
+      font-style: italic;
+      color: #8b3b2f;
     }
   </style>
 </head>
@@ -23,16 +17,16 @@
   <!-- Header -->
   <header class="site-header">
     <div class="container header-inner">
-      <div class="logo">
-        <span class="logo-mark">KW</span>
-        <div class="logo-text">
-          <strong>Kaizenway</strong>
-          <span>експорт Veldar</span>
+      <div class="brand">
+        <img src="images/logo.svg" alt="Kaizenway UA" class="brand-logo" />
+        <div class="brand-text">
+          <span class="brand-name">Kaizenway UA</span>
+          <span class="brand-tag">WEB‑проєкт · ZP‑51</span>
         </div>
       </div>
 
-      <nav class="site-nav" aria-label="Головна навігація">
-        <ul>
+      <nav class="nav">
+        <ul class="nav-list">
           <li><a href="#hero">Головна</a></li>
           <li><a href="#about">Про нас</a></li>
           <li><a href="#services">Послуги</a></li>
@@ -42,135 +36,160 @@
       </nav>
 
       <div class="header-contacts">
-        <a href="tel:+380441234567">+38 (044) 123‑45‑67</a>
-        <a href="mailto:sales@kaizenway.ua">sales@kaizenway.ua</a>
+        <a href="mailto:kaizenway.demo@edu.kpi.ua">kaizenway.demo@edu.kpi.ua</a>
+        <a href="tel:+380990001122">+38 (099) 000‑11‑22</a>
       </div>
     </div>
   </header>
 
   <!-- Main -->
-  <main id="main">
-    <section id="hero" class="hero">
+  <main>
+    <section class="section hero" id="hero">
       <div class="container hero-inner">
         <div class="hero-content">
-          <h1>Радари Veldar для українського ринку</h1>
-          <p>Kaizenway організовує постачання, сертифікацію та інтеграцію радарних рішень Veldar.com для безпечної інфраструктури України.</p>
-          <p style="color:#0f766e;"><strong>Фокус 2026:</strong> швидке розгортання та локальна підтримка 24/7.</p>
+          <p class="eyebrow">Аналітика автопарку</p>
+          <h1>Kaizenway — контроль маршрутів, пального та ефективності</h1>
+          <p class="lead">
+            Демонстраційний лендінг показує, як виглядає сучасний веб‑застосунок для управління транспортом.
+            Тут є структура, стилізація та адаптивність за вимогами домашнього завдання.
+          </p>
+          <p style="color: #b23a2f; font-weight: 600;">
+            Inline‑стиль: цей рядок виділено для виконання вимоги.
+          </p>
           <div class="hero-actions">
-            <a class="btn" href="#contacts">Запитати КП</a>
-            <a class="btn-outline" href="#services">Дивитися послуги</a>
-          </div>
-          <div class="hero-stats">
-            <div class="stat">
-              <span>10+ років</span>
-              <small>міжнародного експорту</small>
-            </div>
-            <div class="stat">
-              <span>24/7</span>
-              <small>служба підтримки</small>
-            </div>
-            <div class="stat">
-              <span>48 год</span>
-              <small>підготовка поставки</small>
-            </div>
+            <a href="#services" class="btn btn-primary">Дивитись можливості</a>
+            <a href="#contacts" class="btn btn-ghost">Зворотний звʼязок</a>
           </div>
         </div>
         <div class="hero-visual">
-          <img src="images/radar-hero.svg" alt="Радарні технології Veldar">
+          <img src="images/hero.svg" alt="Аналітична панель" />
         </div>
       </div>
     </section>
 
-    <section id="about" class="section about">
-      <div class="container">
-        <h2>Про нас</h2>
-        <div class="about-grid">
-          <div>
-            <p>Kaizenway — компанія, що спеціалізується на експорті високотехнологічного обладнання. Ми адаптуємо рішення Veldar до вимог українського ринку та стандартів безпеки.</p>
-            <p>Наша команда працює з логістикою, митними процедурами та підготовкою технічної документації українською мовою.</p>
-          </div>
-          <div class="about-card">
-            <h3>Чому ми</h3>
-            <ul>
-              <li>Партнерство з виробником Veldar</li>
-              <li>Повний супровід від закупівлі до запуску</li>
-              <li>Навчання операторів та сервісна підтримка</li>
-            </ul>
-          </div>
+    <section class="section" id="about">
+      <div class="container two-col">
+        <div>
+          <h2>Про нас</h2>
+          <p>
+            Kaizenway UA — навчальний проєкт, який демонструє структуру веб‑застосунку для контролю транспорту.
+            Мета — показати семантичну верстку, базову стилізацію та адаптивну поведінку сторінки.
+          </p>
+          <p class="inline-note">Використано семантичні теги: header, main, section, footer, nav.</p>
         </div>
-        <div class="note">Працюємо по всій Україні: держсектор, бізнес, інфраструктурні проєкти.</div>
+        <div class="card highlight-card">
+          <h3>Що включено</h3>
+          <ul>
+            <li>Hero‑секція з CTA</li>
+            <li>Блок «Про нас»</li>
+            <li>Послуги та картки</li>
+            <li>Блок команди</li>
+            <li>Контактна форма</li>
+          </ul>
+        </div>
       </div>
     </section>
 
-    <section id="services" class="section services">
+    <section class="section alt" id="services">
       <div class="container">
         <h2>Послуги</h2>
         <div class="cards">
-          <article class="card">
-            <img src="images/logistics.svg" alt="Логістика">
-            <h3>Імпорт і логістика</h3>
-            <p>Повний ланцюг доставки, контроль строків і страхування вантажів.</p>
+          <article class="service-card">
+            <img src="images/icon-analytics.svg" alt="Аналітика" />
+            <h3>Аналітика маршрутів</h3>
+            <p>Відстеження маршрутів, пробігу та простоїв автотранспорту.</p>
           </article>
-          <article class="card">
-            <img src="images/certification.svg" alt="Сертифікація">
-            <h3>Сертифікація</h3>
-            <p>Підготовка документів та узгодження з українськими стандартами.</p>
+          <article class="service-card">
+            <img src="images/icon-fuel.svg" alt="Пальне" />
+            <h3>Контроль пального</h3>
+            <p>Облік витрат, контроль заправок і попередження втрат.</p>
           </article>
-          <article class="card">
-            <img src="images/integration.svg" alt="Інтеграція">
-            <h3>Інтеграція</h3>
-            <p>Налаштування програмного забезпечення та підключення до систем замовника.</p>
+          <article class="service-card">
+            <img src="images/icon-alerts.svg" alt="Алерти" />
+            <h3>Смарт‑сповіщення</h3>
+            <p>Автоматичні сповіщення про відхилення від графіків.</p>
           </article>
-          <article class="card">
-            <img src="images/support.svg" alt="Підтримка">
-            <h3>Підтримка 24/7</h3>
-            <p>Технічні консультації, сервісні виїзди та планове обслуговування.</p>
-          </article>
+        </div>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Пакет</th>
+                <th>Функції</th>
+                <th>Ліміти</th>
+                <th>Ціна / міс</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Start</td>
+                <td>GPS‑моніторинг, базові звіти</td>
+                <td>до 10 авто</td>
+                <td>₴480</td>
+              </tr>
+              <tr>
+                <td>Control</td>
+                <td>Пальне, алерти, аналітика</td>
+                <td>до 50 авто</td>
+                <td>₴1200</td>
+              </tr>
+              <tr>
+                <td>Pro</td>
+                <td>Інтеграції, кастомні дашборди</td>
+                <td>до 200 авто</td>
+                <td>₴2600</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </section>
 
-    <section id="team" class="section team">
+    <section class="section" id="team">
       <div class="container">
         <h2>Команда</h2>
-        <div class="cards team-cards">
-          <article class="card">
-            <h3>Оксана Мельник</h3>
-            <p>Керівниця проєкту Україна</p>
-          </article>
-          <article class="card">
-            <h3>Андрій Коваленко</h3>
-            <p>Технічний архітектор</p>
-          </article>
-          <article class="card">
-            <h3>Ірина Савчук</h3>
-            <p>Сервіс та підтримка</p>
-          </article>
+        <div class="team-grid">
+          <div class="team-card" id="team-lead">
+            <h3>Олексій М.</h3>
+            <p>Team Lead · аналітика транспорту</p>
+          </div>
+          <div class="team-card">
+            <h3>Марія К.</h3>
+            <p>UX/UI · прототипування та дизайн</p>
+          </div>
+          <div class="team-card">
+            <h3>Дмитро С.</h3>
+            <p>Frontend · інтерактивні компоненти</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="contacts" class="section contacts">
-      <div class="container contact-inner">
-        <div class="contact-info">
+    <section class="section alt" id="contacts">
+      <div class="container contact-grid">
+        <div>
           <h2>Контакти</h2>
-          <p>Пишіть або телефонуйте — підготуємо комерційну пропозицію та технічні специфікації.</p>
-          <p><strong>Адреса:</strong> Київ, вул. Інноваційна, 12</p>
-          <p><strong>Телефон:</strong> +38 (044) 123‑45‑67</p>
-          <p><strong>Email:</strong> sales@kaizenway.ua</p>
+          <p>Залиште заявку — ми сформуємо файл звернення у форматі .txt.</p>
+          <p><b>Email:</b> kaizenway.demo@edu.kpi.ua</p>
+          <p><b>Телефон:</b> +38 (099) 000‑11‑22</p>
         </div>
-        <form class="contact-form" id="contact-form" novalidate>
-          <label for="contact-name">Ім’я
-            <input id="contact-name" name="name" type="text" placeholder="Ваше ім’я">
+
+        <form class="contact-form" id="contact-form">
+          <label>
+            Імʼя
+            <input type="text" id="contact-name" placeholder="Ваше імʼя" required />
           </label>
-          <label for="contact-email">Email
-            <input id="contact-email" name="email" type="email" placeholder="name@company.ua">
+          <label>
+            Email
+            <input type="email" id="contact-email" placeholder="your@email.com" required />
           </label>
-          <label for="contact-message">Запит
-            <textarea id="contact-message" name="message" rows="4" placeholder="Опишіть потреби"></textarea>
+          <label>
+            Повідомлення
+            <textarea id="contact-message" rows="4" placeholder="Опишіть запит" required></textarea>
           </label>
-          <p id="form-status" class="form-status" aria-live="polite"></p>
-          <button type="submit" class="btn">Надіслати</button>
+          <button type="submit" class="btn btn-primary">Надіслати</button>
+          <p id="form-status" class="form-status" role="status"></p>
         </form>
       </div>
     </section>
@@ -178,17 +197,11 @@
 
   <!-- Footer -->
   <footer class="site-footer">
-    <div class="container footer-inner">
-      <div>
-        <strong>Kaizenway</strong>
-        <p>Експорт радарів Veldar для України</p>
-      </div>
-      <div>
-        <p>© 2026 Kaizenway. Навчальний проєкт.</p>
-        <p>Автор: Єрещенко Максим</p>
-      </div>
+    <div class="container">
+      <p>© 2026 Kaizenway UA · навчальний проєкт ZP‑51</p>
     </div>
   </footer>
+
   <script src="js/main.js"></script>
 </body>
 </html>
